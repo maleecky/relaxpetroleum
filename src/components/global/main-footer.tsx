@@ -8,7 +8,7 @@ import logo from "@/../public/media/relax-logo-white.png";
 const MainFooter = () => {
   return (
     <footer className="flex flex-col bg-[#101010] w-full relative justify-between lg:px-20 px-5 pt-20 pb-5 mt-10 ">
-      <div className="flex items-start flex-wrap gap-8  justify-between w-full">
+      <div className="flex max-w-[1700px]  m-auto items-start flex-wrap gap-8  justify-between w-full">
         <div className="flex items-center gap-2">
           <Image src={logo} width={40} height={40} alt="" />
           <h2 className="text-white text-2xl font-semibold uppercase">Relax</h2>
@@ -87,7 +87,7 @@ const MainFooter = () => {
       <div className="w-full flex items-center mt-10 justify-center border-t border-[#404040] py-5">
         <div className="text-white/90 flex items-center  justify-center">
           <p className="text-center">
-            Relax petroleum Ltd. ©️2014-2024 | All rights reserved
+            Relax Petroleum Ltd. ©️2014-2024 | All Rights Reserved
           </p>
         </div>
       </div>

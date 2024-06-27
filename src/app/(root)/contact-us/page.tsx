@@ -21,7 +21,7 @@ const ContactPage = () => {
           </p>
         </div>
       </section>
-      <section className=" py-20 lg:px-20 px-5  max-[200px]:px-[0.3125rem] flex flex-col gap-14 ">
+      <section className="max-w-[1700px]  m-auto py-20 lg:px-20 px-5  max-[200px]:px-[0.3125rem] flex flex-col gap-14 ">
         <div className="flex flex-col items-center gap-3">
           <h4 className="text-[#0b326f]">Request a quote</h4>
           <h2 className="w-full max-w-[20em] text-center text-2xl max-[480px]:text-[22px] max-[480px]:leading-[1.2] font-semibold">
@@ -53,7 +53,7 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-      <section className=" pt-10 pb-20 lg:px-20 px-5  max-[200px]:px-[0.3125rem] flex flex-col gap-14 items-center ">
+      <section className=" max-w-[1700px]  m-auto pt-10 pb-20 lg:px-20 px-5  max-[200px]:px-[0.3125rem] flex flex-col gap-14 items-center ">
         <div className="space-y-3 text-center">
           <h4 className="text-[#0b326f]">Visit Us</h4>
           <h2 className="max-w-[25em] text-2xl max-[480px]:text-[22px] max-[480px]:leading-[1.2] font-semibold">

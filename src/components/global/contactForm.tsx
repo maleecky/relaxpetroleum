@@ -7,6 +7,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../ui/form";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
+import { toast } from "../ui/use-toast";
+import { useRouter } from "next/navigation";
 
 const FormSchema = z.object({
   fullName: z
@@ -24,10 +26,18 @@ const ContactForm = () => {
     mode: "onSubmit",
     resolver: zodResolver(FormSchema),
   });
+  const route = useRouter();
 
   const isSubmitting = form.formState.isSubmitting;
 
-  const onFormSubmit = () => {};
+  const onFormSubmit = () => {
+    toast({
+      title: "success",
+      description: "The message is sent",
+    });
+
+    route.push("/");
+  };
   return (
     <Form {...form}>
       <form

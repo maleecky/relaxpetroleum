@@ -9,7 +9,7 @@ import { coreValue } from "@/lib/constants";
 const AboutUs = () => {
   return (
     <>
-      <section className="flex lg:items-center lg:flex-row flex-col  border-b py-20 lg:px-20 px-5 max-[200px]:px-[0.3125rem] gap-8">
+      <section className="flex max-w-[1700px]  m-auto lg:items-center lg:flex-row flex-col  border-b py-20 lg:px-20 px-5 max-[200px]:px-[0.3125rem] gap-8">
         <div className="min-[590px]:max-w-[500px] w-full flex flex-col gap-4">
           <h4 className="text-[#0B326F]">Who we are </h4>
           <h1 className="text-[40px] font-semibold max-[465px]:text-[32px] max-[350px]:text-[24px] max-[247px]:text-[22px] leading-[1.25em]">
@@ -22,7 +22,7 @@ const AboutUs = () => {
           <ImageContainer imagePos="object-[100%_100%]" />
         </div>
       </section>
-      <section className="lg:px-20 px-5 max-[200px]:px-[0.3125rem] pt-20 flex flex-col gap-7">
+      <section className="lg:px-20 max-w-[1700px]  m-auto px-5 max-[200px]:px-[0.3125rem] pt-20 flex flex-col gap-7">
         <h2 className="text-[#0B326F] font-semibold text-2xl">Our story</h2>
         <p>
           Founded in 2014 and headquartered in Vingunguti, Dar es Salaam, Relax
@@ -45,7 +45,7 @@ const AboutUs = () => {
         </p>
       </section>
       <StatsComponent />
-      <section className="py-20">
+      <section className="py-20 max-w-[1700px]  m-auto">
         <div className="flex flex-col lg:justify-center justify-between items-center">
           <div className="max-[1140px]:hidden">
             <h2 className="text-2xl  max-[480px]:text-[22px] max-[480px]:leading-[1.2] text-[#0B326F] font-medium border-b border-[#ececec] ">
@@ -85,7 +85,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-col max-[640px]:items-center items-start  py-20 lg:px-20 px-5 max-[200px]:px-[0.3125rem] gap-10">
+      <section className="flex flex-col max-w-[1700px]  m-auto max-[640px]:items-center items-start  py-20 lg:px-20 px-5 max-[200px]:px-[0.3125rem] gap-10">
         <div className="flex flex-col max-[640px]:items-center items-start gap-3">
           <h4 className="text-[#0B326F] max-[640px]:text-center text-left">
             Our Strategic Pillars

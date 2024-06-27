@@ -4,9 +4,8 @@ import React from "react";
 import logo from "@/../public/media/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu } from "lucide-react";
-import DropdownMenu from "./dropdown-menu";
-import { services } from "@/lib/constants";
+import { DropMenu } from "./dropdown-menu";
+import Menu from "./menu";
 
 const MainHeader = () => {
   return (
@@ -34,17 +33,7 @@ const MainHeader = () => {
       </div>
       <div className="flex gap-6 text-[1.0625em] items-center">
         <div className="lg:flex gap-10 items-center hidden ">
-          <DropdownMenu btn="Services">
-            {services.map((service, index) => (
-              <li
-                className="w-full whitespace-pre-wrap min-w-[20em]"
-                key={index}
-              >
-                <h4 className="capitalize font-medium">{service.title}</h4>
-                <p className="text-sm">{service.description}</p>
-              </li>
-            ))}
-          </DropdownMenu>
+          <DropMenu />
           <div>
             <Link href="/about-us">About us</Link>
           </div>
@@ -85,9 +74,8 @@ const MainHeader = () => {
             Send Inquire
           </Link>
         </div>
-        <div className="lg:hidden block">
-          <Menu />
-        </div>
+
+        <Menu />
       </div>
     </header>
   );

@@ -3,6 +3,7 @@ import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import MainHeader from "@/components/global/main-header";
 import MainFooter from "@/components/global/main-footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const font = Hanken_Grotesk({
   subsets: ["latin"],
@@ -20,12 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <main>
           <MainHeader />
           {children}
           <MainFooter />
+          <Toaster />
         </main>
       </body>
     </html>
