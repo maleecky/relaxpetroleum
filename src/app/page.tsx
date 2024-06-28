@@ -1,17 +1,19 @@
 import Hero from "@/../public/media/relaxfront.png";
 import Image from "next/image";
-import { services, stats } from "@/lib/constants";
+import { services } from "@/lib/constants";
 import trucks from "@/../public/media/MANYTRUCKS.jpg";
 import trailer from "@/../public/media/trailer.png";
 import Card from "@/components/global/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import StatsComponent from "@/components/global/stats-component";
+import Video from "next-video";
+import yardvid from "@/../videos/yard.mp4";
 
 export default function Home() {
   return (
     <>
-      <section className="pt-20    h-[80vh] lg:h-[100vh] relative min-[555px]:px-20 px-5 max-[200px]:px-[0.3125rem]">
+      <section className="pt-20 h-[80vh] lg:h-[100vh] relative min-[555px]:px-20 px-5 max-[200px]:px-[0.3125rem]">
         <Image
           src={Hero}
           sizes="(min-width: 768px) 100vw"
@@ -383,15 +385,15 @@ export default function Home() {
         </div>
       </section> */}
       <section className="flex max-w-[1700px]  m-auto w-full relative items-center justify-between lg:px-20 px-5 max-[200px]:px-[0.3125rem] md:pt-20 pt:10 pb-10 ">
-        <div className="relative min-h-[400px] rounded-3xl  overflow-hidden w-full">
-          <video
-            src={require("../../public/media/yard.mp4")}
+        <div className="relative h-[400px] rounded-3xl  overflow-hidden w-full">
+          <Video
+            src={yardvid}
             autoPlay
             muted
             loop
             playsInline
-            height="100"
-            className="absolute top-0 left-0 bottom-0 -z-10 right-0 object-cover w-full h-full"
+            controls={false}
+            className="absolute top-0 left-0 bottom-0 -z-10 right-0 object-cover w-full"
           />
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-[#1e1e1e]/60 z-5"></div>
           <div className="z-20 text-white absolute top-0 bottom-0 right-0 left-0 lg:px-20 px-5 flex gap-4 flex-col justify-center ">
