@@ -38,10 +38,10 @@ const MainHeader = () => {
             <Link href="/about-us">About us</Link>
           </div>
           <div>
-            <Link href="/career">Career</Link>
+            <Link href="/">Career</Link>
           </div>
           <div>
-            <Link href="/company">Company</Link>
+            <Link href="/">Company</Link>
           </div>
           <div className="flex items-center space-x-3">
             <div className="bg-textiaryForeground shadow icon rounded-full">

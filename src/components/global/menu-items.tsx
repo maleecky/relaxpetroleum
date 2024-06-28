@@ -13,15 +13,15 @@ const navItems = [
   },
   {
     title: "Careers",
-    href: "/career",
+    href: "/",
   },
   {
     title: "Company",
-    href: "/company",
+    href: "/",
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "/contact-us",
   },
 ];
 
