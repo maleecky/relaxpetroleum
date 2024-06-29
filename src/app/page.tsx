@@ -385,7 +385,7 @@ export default function Home() {
       <section className="flex max-w-[1700px]  m-auto w-full relative items-center justify-between lg:px-20 px-5 max-[200px]:px-[0.3125rem] md:pt-20 pt:10 pb-10 ">
         <div className="relative h-[400px] rounded-3xl  overflow-hidden w-full">
           <video
-            src={require("../../public/media/yard.mp4")}
+            src="/media/yard.mp4"
             autoPlay
             muted
             loop
