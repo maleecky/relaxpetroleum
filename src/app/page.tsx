@@ -390,9 +390,7 @@ export default function Home() {
             muted
             loop
             playsInline
-            controls={false}
             className="absolute top-0 left-0 bottom-0 -z-10 right-0 object-cover h-full w-full"
-            preload="none"
           />
 
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-[#1e1e1e]/60 z-5"></div>
