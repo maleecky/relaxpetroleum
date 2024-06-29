@@ -7,8 +7,6 @@ import Card from "@/components/global/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import StatsComponent from "@/components/global/stats-component";
-import Video from "next-video";
-import yardvid from "@/../videos/yard.mp4";
 
 export default function Home() {
   return (
@@ -386,15 +384,17 @@ export default function Home() {
       </section> */}
       <section className="flex max-w-[1700px]  m-auto w-full relative items-center justify-between lg:px-20 px-5 max-[200px]:px-[0.3125rem] md:pt-20 pt:10 pb-10 ">
         <div className="relative h-[400px] rounded-3xl  overflow-hidden w-full">
-          <Video
-            src={yardvid}
+          <video
+            src={require("../../public/media/yard.mp4")}
             autoPlay
             muted
             loop
             playsInline
             controls={false}
-            className="absolute top-0 left-0 bottom-0 -z-10 right-0 object-cover w-full"
+            className="absolute top-0 left-0 bottom-0 -z-10 right-0 object-cover h-full w-full"
+            preload="none"
           />
+
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-[#1e1e1e]/60 z-5"></div>
           <div className="z-20 text-white absolute top-0 bottom-0 right-0 left-0 lg:px-20 px-5 flex gap-4 flex-col justify-center ">
             <h2 className="text-2xl font-semibold">Safety First</h2>

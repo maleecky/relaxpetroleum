@@ -1,7 +1,8 @@
-const { withNextVideo } = require("next-video/process");
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-const nextConfig = {}; // Your current Next Config object
+module.exports = nextConfig;
 
-module.exports = withNextVideo(nextConfig, {
-  folder: "video",
-});
+const withVideos = require("next-videos");
+
+module.exports = withVideos();
