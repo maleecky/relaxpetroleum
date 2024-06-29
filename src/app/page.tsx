@@ -385,13 +385,15 @@ export default function Home() {
       <section className="flex max-w-[1700px]  m-auto w-full relative items-center justify-between lg:px-20 px-5 max-[200px]:px-[0.3125rem] md:pt-20 pt:10 pb-10 ">
         <div className="relative h-[400px] rounded-3xl  overflow-hidden w-full">
           <video
-            src="/media/yard.mp4"
             autoPlay
             muted
             loop
             playsInline
             className="absolute top-0 left-0 bottom-0 -z-10 right-0 object-cover h-full w-full"
-          />
+          >
+            <source src="/media/yard.mp4" />
+            Your browser is not supported!
+          </video>
 
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-[#1e1e1e]/60 z-5"></div>
           <div className="z-20 text-white absolute top-0 bottom-0 right-0 left-0 lg:px-20 px-5 flex gap-4 flex-col justify-center ">
