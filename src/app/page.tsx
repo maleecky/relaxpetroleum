@@ -389,9 +389,10 @@ export default function Home() {
             muted
             loop
             playsInline
+            preload="auto"
             className="absolute top-0 left-0 bottom-0 -z-10 right-0 object-cover h-full w-full"
           >
-            <source src="/media/yard.mp4" />
+            <source src="/media/yard.mp4" type="video/mp4" />
             Your browser is not supported!
           </video>
 
